@@ -1,13 +1,105 @@
+/* Import Tailwind's Base Styles */
+@tailwind base;
+
+/* Import Tailwind's Component Styles */
+@tailwind components;
+
+/* Import Tailwind's Utility Classes */
+@tailwind utilities;
+
+/* Custom Styles (if necessary) */
+
+/* You can add any project-specific custom CSS here. */
+/* Example: */
+/*
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Inter', sans-serif;
+}
+*/
+.inner-shadow {
+  box-shadow: inset 0 4px 4px rgba(0, 0, 0, 0.1);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* CSS Gradient based on the icon's colors */
+.page-background {
+  background-image: linear-gradient(to bottom right, #F7D770 25%, #9DD6A3 30%, #6C7B95 45%);
+  min-height: 100vh; /* Ensure at least full viewport height */
+  position: relative; /* Needed for absolute positioning of pseudo-element */
+}
+
+.text-shadow {
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* subtle shadow for text */
+}
+
+.sidebar-shadow {
+  box-shadow: inset 0 -1px 3px rgba(0, 0, 0, 0.1), /* top inner shadow */
+               inset 0 1px 3px rgba(255, 255, 255, 0.1); /* bottom inner highlight */
+}
+
+.text-inner-shadow {
+  color: #fff; /* Set text color to white */
+  text-shadow:
+    -1px -1px 1px rgba(0, 0, 0, 0.5), /* Top-left inner shadow */
+    1px 1px 1px rgba(0, 0, 0, 0.5); /* Bottom-right inner shadow */
+}
+
+.shadow-inner {
+  box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.05);
+}
+
+/* In your global stylesheet */
+.button-embossed {
+  transition: box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out;
+  box-shadow: inset -4px -4px 8px #ffffff70, inset 2px 2px 4px rgba(0, 0, 0, 0.2);
+  background-color: #F7D770;
+  color: white;
+}
+
+.button-embossed:active {
+  box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.5);
+  background-color: #e6c965;
+}
+
+/* CustomTabs.css */
+.custom-tab-bg {
+  background-color: #fff; /* Your custom color */
+}
+
+.tabs .tab-item-title.active {
+  color: #1D4ED8; /* Example color: Tailwind's blue-700 */
+}
+
+.tabs .tab-item-title {
+  color: #1D4ED8; /* Example color: Tailwind's gray-500 */
+}
+
+/* CustomStyles.css */
+/* Override the text color of active tabs */
+.tab-item .active {
+  color: #4F46E5; /* Example: Tailwind's indigo-600 */
+}
+
+/* Override the text color of inactive tabs */
+.tab-item:not(.active) {
+  color: #9CA3AF; /* Example: Tailwind's gray-400 */
+}
+
+
+/* Assuming you're using PostCSS or configured Tailwind to handle arbitrary values */
+.sidebar-open {
+  @apply block;
+}
+
+.sidebar-closed {
+  @apply hidden md:block;
+}
+
+/* Custom transitions for sidebar */
+.sidebar-content {
+  @apply fixed z-10 top-0 left-0 h-full w-64 bg-white dark:bg-gray-800 shadow-md md:static md:w-auto md:h-auto md:shadow-none;
+}
+
+html, body {
+  height: 100%;
+  overflow: auto;
 }
