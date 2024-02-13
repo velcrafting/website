@@ -91,7 +91,7 @@ function AppSidebar() {
                 open={openGroup === 'upcomingProjects'}
                 onClick={() => toggleOpenGroup('upcomingProjects')}
               >
-                <Sidebar.Item href="https://discord.gg/yZXN4VzVHk" target="_blank">OdysSEI</Sidebar.Item>
+                <Sidebar.Item href="#" target="_blank">OdysSEI</Sidebar.Item>
                 <Sidebar.Item>Trading Bot</Sidebar.Item>
               </Sidebar.Collapse>
             </Sidebar.ItemGroup>

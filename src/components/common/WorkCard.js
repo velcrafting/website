@@ -27,7 +27,7 @@ const workContents = [
       },
       {
         name: 'crimson',
-        title: "Co-Author, Designer, & storyboarding", 
+        title: "Co-Author, Designer, & Storyboarding", 
         company: "Crimson Odyssey",
         dates: "October 2023 - Present",
         tasks: [
