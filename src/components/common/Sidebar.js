@@ -63,36 +63,36 @@ function AppSidebar() {
               <ProfileCard />
             </div>
             <Sidebar.ItemGroup>
-              <Sidebar.Collapse
-                icon={Icons.InfoCircle}
-                label="Overview"
-                open={openGroup === 'overview'}
-                onClick={() => toggleOpenGroup('overview')}
-              >
-                <Sidebar.Item>Professional Summary</Sidebar.Item>
-                <Sidebar.Item>Skills & Interests</Sidebar.Item>
-                <Sidebar.Item>Portfolio</Sidebar.Item>
-              </Sidebar.Collapse>
+            <Sidebar.Collapse
+              icon={Icons.InfoCircle}
+              label="Overview"
+              open={openGroup === 'overview'}
+              onClick={() => toggleOpenGroup('overview')}
+            >
+              <Sidebar.Item><a href="/">Professional Summary</a></Sidebar.Item>
+              <Sidebar.Item><a href="/">Skills & Interests</a></Sidebar.Item>
+              <Sidebar.Item><a href="/">Portfolio</a></Sidebar.Item>
+            </Sidebar.Collapse>
+
+            <Sidebar.Collapse
+              icon={Icons.Clipboard}
+              label="Work History"
+              open={openGroup === 'workHistory'}
+              onClick={() => toggleOpenGroup('workHistory')}
+            >
+              <Sidebar.Item><a href="/">Current</a></Sidebar.Item>
+              <Sidebar.Item><a href="/">Blockchain & Web3</a></Sidebar.Item>
+              <Sidebar.Item><a href="/">Corporate IT</a></Sidebar.Item>
+            </Sidebar.Collapse>
 
               <Sidebar.Collapse
-                icon={Icons.Clipboard}
-                label="Work History"
-                open={openGroup === 'workHistory'}
-                onClick={() => toggleOpenGroup('workHistory')}
-              >
-                <Sidebar.Item>Current</Sidebar.Item>
-                <Sidebar.Item>Blockchain & Web3</Sidebar.Item>
-                <Sidebar.Item>Corporate IT</Sidebar.Item>
-              </Sidebar.Collapse>
-
-              <Sidebar.Collapse
-                icon={Icons.Lock}
-                label="Upcoming Projects"
+                icon={Icons.Ghost}
+                label="Projects"
                 open={openGroup === 'upcomingProjects'}
                 onClick={() => toggleOpenGroup('upcomingProjects')}
               >
-                <Sidebar.Item href="#" target="_blank">OdysSEI</Sidebar.Item>
-                <Sidebar.Item>Trading Bot</Sidebar.Item>
+                <Sidebar.Item href="https://crimsonodyssey.com/villagers.html" target="_blank">The Villagers</Sidebar.Item>
+                <Sidebar.Item href="/sketch">Code x Art</Sidebar.Item>
               </Sidebar.Collapse>
             </Sidebar.ItemGroup>
 

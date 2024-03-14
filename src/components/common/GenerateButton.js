@@ -1,7 +1,8 @@
 import React from 'react';
+import { Button } from 'flowbite-react';
 
 const GenerateButton = ({ onGenerate }) => (
-  <button onClick={onGenerate}>New Image</button>
+  <Button onClick={onGenerate}>New Image</Button>
 );
 
 export default GenerateButton;

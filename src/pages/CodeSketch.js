@@ -4,7 +4,7 @@ import { Card } from 'flowbite-react';
 
 function CodeSketch() {
   return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 lg:mt-[-50px] xl:mt-[-50px] md:mb-50p">
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 lg:mt-[-20px] xl:mt-[-20px] md:mb-50p">
 
       <SketchPage />
 
