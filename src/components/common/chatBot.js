@@ -12,7 +12,7 @@ const ChatBot = () => {
   const handleSend = async (prompt) => {
     setResponses(oldResponses => [...oldResponses, { type: 'user', text: prompt }]);
     try {
-      const baseUrl = 'http://AgentTest-env.eba-ckaunp2p.us-east-1.elasticbeanstalk.com';
+      const baseUrl = 'https://AgentTest-env.eba-ckaunp2p.us-east-1.elasticbeanstalk.com';
       const { data } = await axios.post(`${baseUrl}/start_query`, { prompt });
       const sessionId = data.sessionId;
       const eventSource = new EventSource(`${baseUrl}/stream_response?sessionId=${sessionId}`);
