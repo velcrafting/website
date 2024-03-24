@@ -5,6 +5,7 @@ import Home from './pages/Home';
 import CodeSketch from './pages/CodeSketch';
 import Projects from './pages/Projects';
 import Odyssey from './pages/Odyssey';
+import Chat from './pages/ChatPage';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/sketch" element={<CodeSketch />} />
+            <Route path="/chat" element={<Chat />} />
             {/* <Route path="/projects" element={<Projects />} />
             <Route path="/odyssey" element={<Odyssey />} /> */}
           </Routes>
