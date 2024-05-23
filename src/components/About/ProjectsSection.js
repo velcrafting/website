@@ -17,8 +17,8 @@ const projects = [
   },
   {
     title: 'Velcrafting.com',
-    description: 'Advanced Content Management Site, and Portfolio',
-    more: 'Also did X, Y, Z',
+    description: 'Advanced Resume, Content Management Site, and Portfolio',
+    more: 'Leveraging nextJS, Material UI, Firebase, and more to build a comprehensive website platform that acts as a display of work history for visitors. Soon, registration will be available and interested visitors can sign up for my newsletter and have access to a suite of custom made tools including: A Kanban (think like trello), Calendar, Taskmanager, Dynamic Forms/Surveys, Calendly-Type Scheudler. As well as some for fun tools including: Master Queue (aggregator of streaming services), & a Tool Requestor for suggestions on what others may want to made.',
     image: '/logo.png',
   },
 ];
