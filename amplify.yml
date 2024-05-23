@@ -1,0 +1,27 @@
+version: 1.0
+frontend:
+  phases:
+    preBuild:
+      commands:
+        - npm ci --legacy-peer-deps
+    build:
+      commands:
+        - npm run build
+  artifacts:
+    baseDirectory: build
+    files:
+      - '**/*'
+  cache:
+    paths:
+      - node_modules/**/*
+
+# Optional: If you have a backend configuration
+backend:
+  phases:
+    build:
+      commands:
+        - amplifyPush --simple
+  artifacts:
+    baseDirectory: amplify/backend
+    files:
+      - '**/*'
