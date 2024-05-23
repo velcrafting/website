@@ -17,7 +17,7 @@ const UserLayout = ({ children }) => {
       children: [
         { text: 'Dashboard', path: '/', icon: <Icons.DashboardIcon /> },
         { text: 'About', path: '/users/about', icon: <Icons.InfoIcon /> },
-        { text: 'Forms', path: '/users/forms', icon: <Icons.FormBuilderIcon /> },
+        { text: 'Forms', path: '/users/forms', icon: <Icons.BuildIcon /> },
         { text: 'Blog', path: '/users/blogs', icon: <Icons.ArticleIcon /> },
       ],
     },
