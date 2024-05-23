@@ -60,20 +60,20 @@ import ThumbDownIcon from '@mui/icons-material/ThumbDown';
 import ShareIcon from '@mui/icons-material/Share';
 import BookmarkIcon from '@mui/icons-material/Bookmark';
 import BookmarkBorderIcon from '@mui/icons-material/BookmarkBorder';
-import CodeIcon from '@mui/icons-material/Code';  // JavaScript
-import SettingsEthernetIcon from '@mui/icons-material/SettingsEthernet';  // React
-import EmojiObjectsIcon from '@mui/icons-material/EmojiObjects';  // Java
-import HtmlIcon from '@mui/icons-material/Html';  // HTML
-import CssIcon from '@mui/icons-material/Css';  // CSS
-import DeveloperModeIcon from '@mui/icons-material/DeveloperMode';  // Python
-import CloudQueueIcon from '@mui/icons-material/CloudQueue';  // AWS
-import VideogameAssetIcon from '@mui/icons-material/VideogameAsset';  // NVIDIA AI
-import SmartToyIcon from '@mui/icons-material/SmartToy';  // OpenAI
-import BrushIcon from '@mui/icons-material/Brush';  // Canva
-import DesignServicesIcon from '@mui/icons-material/DesignServices';  // Figma
-import AppsIcon from '@mui/icons-material/Apps';  // Google Suite
-import MicrosoftIcon from '@mui/icons-material/Microsoft';  // Microsoft Suite
-import SportsEsportsIcon from '@mui/icons-material/SportsEsports';  // Gaming
+import CodeIcon from '@mui/icons-material/Code';
+import SettingsEthernetIcon from '@mui/icons-material/SettingsEthernet';
+import EmojiObjectsIcon from '@mui/icons-material/EmojiObjects';
+import HtmlIcon from '@mui/icons-material/Html';
+import CssIcon from '@mui/icons-material/Css';
+import DeveloperModeIcon from '@mui/icons-material/DeveloperMode';
+import CloudQueueIcon from '@mui/icons-material/CloudQueue';
+import VideogameAssetIcon from '@mui/icons-material/VideogameAsset';
+import SmartToyIcon from '@mui/icons-material/SmartToy';
+import BrushIcon from '@mui/icons-material/Brush';
+import DesignServicesIcon from '@mui/icons-material/DesignServices';
+import AppsIcon from '@mui/icons-material/Apps';
+import MicrosoftIcon from '@mui/icons-material/Microsoft';
+import SportsEsportsIcon from '@mui/icons-material/SportsEsports';
 
 export {
   DashboardIcon,
