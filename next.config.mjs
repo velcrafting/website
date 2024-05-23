@@ -18,7 +18,6 @@ const nextConfig = {
       '/projects/chat': { page: '/projects/chat' },
       '/projects/kanban': { page: '/projects/kanban' },
       '/projects/tasks': { page: '/projects/tasks' },
-      '/users/[page]': { page: '/users/[page]' },
       '/users/about': { page: '/users/about' },
       '/users/blogs': { page: '/users/blogs' },
       '/users/forms': { page: '/users/forms' },
