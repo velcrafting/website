@@ -7,7 +7,6 @@ class MyDocument extends Document {
       <Html>
         <Head>
           <link rel="icon" href="/logo.png" />
-          <title>velcrafting.com</title>
         </Head>
         <body>
           <Main />
