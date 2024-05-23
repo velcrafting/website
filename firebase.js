@@ -1,5 +1,5 @@
 import { initializeApp } from 'firebase/app';
-import { getFirestore, setDoc, doc, storage } from 'firebase/firestore';
+import { getFirestore, setDoc, doc,  } from 'firebase/firestore';
 import { getAuth, createUserWithEmailAndPassword, signInWithPopup, signInWithEmailAndPassword, GoogleAuthProvider, TwitterAuthProvider, signOut  } from 'firebase/auth';
 
 const firebaseConfig = {
@@ -17,4 +17,4 @@ const auth = getAuth(app);
 const googleProvider = new GoogleAuthProvider();
 const twitterProvider = new TwitterAuthProvider();
 
-export { db, auth, googleProvider, twitterProvider, createUserWithEmailAndPassword, signInWithPopup, signInWithEmailAndPassword, setDoc, doc, signOut, storage  };
+export { db, auth, googleProvider, twitterProvider, createUserWithEmailAndPassword, signInWithPopup, signInWithEmailAndPassword, setDoc, doc, signOut,};
